@@ -11,7 +11,7 @@ items:
         port: {{.DB_PORT | default "3306"}}
         user: {{.DB_USER | default "root"}}
         password: {{.DB_PASSWORD | default "root"}}
-        database: {{.DB_DATABASE | default "zdv"}}
+        database: {{.DB_DATABASE | default "zkc"}}
         ca_cert: {{.DB_CA_CERT | default ""}}
         automigrate: true
       discord:
@@ -36,6 +36,7 @@ items:
         template_dir: "/app/templates"
       features:
         controller_online: false
+        staffing_request: true
       facility:
         activity:
           enabled: false
@@ -76,38 +77,36 @@ items:
           - RCA
       session:
         cookie:
-          name: "{{.SESSION_NAME | default "zdv_session"}}"
-          key: "{{.SESSION_KEY | default "zdv_session"}}"
+          name: "{{.SESSION_NAME | default "zkc_session"}}"
+          key: "{{.SESSION_KEY | default "zkc_session"}}"
           max_age: 604800
-          domain: "{{.SESSION_DOMAIN | default ".zdvartcc.org"}}"
+          domain: "{{.SESSION_DOMAIN | default ".zkcartcc.org"}}"
           path: "/"
           same_site: "none"
       storage:
-        base_url: {{.STORAGE_BASE_URL | default "https://cdn.zdvartcc.org" }}
+        base_url: {{.STORAGE_BASE_URL | default "https://cdn.zkcartcc.org" }}
         access_key: {{.STORAGE_ACCESS_KEY | default "12345"}}
         secret_key: {{.STORAGE_SECRET_KEY | default "12345"}}
-        bucket: {{.STORAGE_BUCKET | default "denartcc"}}
+        bucket: {{.STORAGE_BUCKET | default "zkcartcc"}}
         region: {{.STORAGE_REGION | default "us-east-1"}}
         endpoint: {{.STORAGE_ENDPOINT | default ""}}
       oauth:
-        base_URL: "https://auth.zdvartcc.org"
+        base_URL: "https://auth.zkcartcc.org"
         endpoints:
           token: "/oauth/token"
           user: "/v1/info"
           authorize: "/oauth/authorize"
-        client_id: "{{.OAUTH_CLIENT_ID | default "zdv"}}"
-        client_secret: "{{.OAUTH_CLIENT_SECRET | default "zdv"}}"
-        my_base_URL: "{{.OAUTH_MY_BASE_URL | default "https://api.dev.zdvartcc.net" }}"
+        client_id: "{{.OAUTH_CLIENT_ID | default "zkcartcc"}}"
+        client_secret: "{{.OAUTH_CLIENT_SECRET | default "zkcartcc"}}"
+        my_base_URL: "{{.OAUTH_MY_BASE_URL | default "https://api.dev.zkcartcc.net" }}"
       vatusa:
         facility: "ZDV"
-        api_key: "{{.VATUSA_API_KEY | default "zdv"}}"
+        api_key: "{{.VATUSA_API_KEY | default "zkc"}}"
         test_mode: {{.VATUSA_TEST_MODE | default false }}
       metrics:
         enabled: true
         port: 8080
         path: /metrics
-      features:
-        staffing_request: true
   kind: ConfigMap
   metadata:
     name: api-config

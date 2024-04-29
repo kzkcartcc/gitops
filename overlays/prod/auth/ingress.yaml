@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: auth.zdvartcc.org
+  - host: auth.zkcartcc.org
     http:
       paths:
       - backend:
@@ -17,5 +17,5 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - auth.zdvartcc.org
-    secretName: tls-auth-denartcc-org
+    - auth.zkcartcc.org
+    secretName: tls-auth-zkcartcc-org

@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: discord.zdvartcc.org
+  - host: discord.zkcartcc.org
     http:
       paths:
       - backend:
@@ -17,5 +17,5 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - discord.zdvartcc.org
-    secretName: tls-discord-denartcc-org
+    - discord.zkcartcc.org
+    secretName: tls-discord-zkcartcc-org

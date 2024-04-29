@@ -1,11 +1,11 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: auth-denartcc-org-tls
+  name: auth-zkcartcc-org-tls
 spec:
   dnsNames:
-  - auth.zdvartcc.org
+  - auth.zkcartcc.org
   issuerRef:
     kind: ClusterIssuer
     name: letsencrypt
-  secretName: tls-auth-denartcc-org
+  secretName: tls-auth-zkcartcc-org
