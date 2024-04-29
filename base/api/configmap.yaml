@@ -58,23 +58,9 @@ items:
           discord_broadcast: true
           discord_broadcast_webhook_name: "online"
           prefixes:
-          - APA
-          - ASE
-          - BJC
-          - BKF
-          - CFO
-          - COS
-          - CPR
-          - CYS
-          - DEN
-          - EGE
-          - FMN
-          - FNL
-          - GJT
-          - GUR
-          - PUB
-          - RAP
-          - RCA
+          - MCI
+          - ICT
+          - STL
       session:
         cookie:
           name: "{{.SESSION_NAME | default "zkc_session"}}"
