@@ -58,9 +58,40 @@ items:
           discord_broadcast: true
           discord_broadcast_webhook_name: "online"
           prefixes:
-          - MCI
+          - GCK
+          - SLN
+          - MHK
+          - FRI
+          - HUT
           - ICT
+          - IAB
+          - BEC
+          - END
+          - WDG
+          - SWO
+          - TUL
+          - RVS
+          - TOP
+          - FOE
+          - STJ
+          - MCI
+          - MKC
+          - IXD
+          - OJC
+          - JLN
+          - SGF
+          - TBN
+          - JEF
+          - COU
+          - SPI
+          - SUS
           - STL
+          - ALN
+          - CPS
+          - BLV
+          - MDH
+          - MWA
+          - DEC
       session:
         cookie:
           name: "{{.SESSION_NAME | default "zkc_session"}}"
