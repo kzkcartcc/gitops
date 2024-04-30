@@ -117,7 +117,7 @@ items:
         client_secret: "{{.OAUTH_CLIENT_SECRET | default "zkcartcc"}}"
         my_base_URL: "{{.OAUTH_MY_BASE_URL | default "https://api.dev.zkcartcc.net" }}"
       vatusa:
-        facility: "ZDV"
+        facility: "ZKC"
         api_key: "{{.VATUSA_API_KEY | default "zkc"}}"
         test_mode: {{.VATUSA_TEST_MODE | default false }}
       metrics:
