@@ -5,7 +5,7 @@ resources:
 images:
 - name: adhp/zkc-frontend
   newName: adhp/frontend
-  newTag: zkc-main-f6b517d
+  newTag: zkc-main-23e8624
 - name: denartcc/api
   newName: adhp/api
   newTag: dev-0ad4d90
