@@ -39,9 +39,9 @@ items:
         staffing_request: true
       facility:
         activity:
-          enabled: false
-          min_hours: 2
-          period: 2
+          enabled: true
+          min_hours: 3
+          period: 3
           run_on_day: 1
           run_at_hour: 0
           run_at_minute: 0
