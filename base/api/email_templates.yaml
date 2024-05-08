@@ -5,18 +5,18 @@ metadata:
 data:
   inactive_warning.tmpl: |
     Subject: You are about to be inactive
-    BCC:
+    CC:
     - seniorstaff@zkcartcc.org
     Body: |
       Dear {{.FirstName}} {{.LastName}},
 
       <p>This is a warning that you have not yet controlled the minimum number of hours during the activity as
-      required by the Kansas City ARTCC Facility Administrative Policy (7210.1).  Per the policy, controllers must control 
-      no less than 2 hours per 2 month period.</p>
+      required by the Kansas City ARTCC General Facility SOP.  Per the policy, controllers must control 
+      no less than 3 hours per quarter.</p>
 
-      <p>If, on the first of the month, this requirement is not met, you will be marked inactive and are subject to
+      <p>If this requirement is not met, you will be marked inactive and are subject to
       removal from the roster. If you are unable to meet this requirement, please contact the Senior Staff to request
-      a leave of absense. They may be contacted by emailing seniorstaff@zkcartcc.org.</p>
+      a leave of absence. They may be contacted by emailing seniorstaff@zkcartcc.org.</p>
 
       <p>Thanks,<br>
       {{- range $atm := findRole "atm"  -}}
@@ -29,14 +29,14 @@ data:
       https://zkcartcc.org</p>
   inactive.tmpl: |
     Subject: You are inactive
-    BCC:
+    CC:
     - seniorstaff@zkcartcc.org
     Body: |
       Dear {{.FirstName}} {{.LastName}},
 
       <p>This is an email notification to inform you that you have not met the minimum activity requirements as set forth
-      by the Kansas City ARTCC Facility Administrative Policy (7210.1).  Per the policy, controllers must control no less than 2
-      hours per 2 month period. You have been marked inactive on the roster and are subject to removal for Inactivity.</p>
+      by the Kansas City ARTCC General Facility SOP.  Per the policy, controllers must control no less than 3
+      hours per quarter. You have been marked inactive on the roster and are subject to removal for inactivity.</p>
 
       <p>If you require a Leave of Absense, please contact the Senior Staff as soon as possible. They may be contacted by
       emailing seniorstaff@zkcartcc.org.</p>
@@ -52,7 +52,7 @@ data:
       https://zkcartcc.org</p>
   visiting_rejected.tmpl: |
     Subject: Your visiting controller request has been rejected
-    BCC:
+    CC:
     - seniorstaff@zkcartcc.org
     Body: |
       Dear {{.FirstName}} {{.LastName}},
@@ -75,7 +75,7 @@ data:
       https://zkcartcc.org</p>
   visiting_added.tmpl: |
     Subject: You have been added to the visiting controller roster
-    BCC:
+    CC:
     - seniorstaff@zkcartcc.org
     Body: |
       Dear {{.FirstName}} {{.LastName}},
@@ -102,12 +102,12 @@ data:
       https://zkcartcc.org</p>
   visiting_removed.tmpl: |
     Subject: You have been removed from the visiting controller roster
-    BCC:
+    CC:
     - seniorstaff@zkcartcc.org
     Body: |
       Dear {{.FirstName}} {{.LastName}}
 
-      <p>This is notification that you have been removed from the Kansas City ARTCC Visiting Controller Roster. If you feel this
+      <p>This is your notification that you have been removed from the Kansas City ARTCC Visiting Controller Roster. If you feel this
       was done in error, please reach out to the Kansas City ARTCC Senior Staff by emailing seniorstaff@zkcartcc.org.</p>
 
       <p>Regards,<br>
