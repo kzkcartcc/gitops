@@ -92,6 +92,7 @@ items:
           - MDH
           - MWA
           - DEC
+          - KC
       session:
         cookie:
           name: "{{.SESSION_NAME | default "zkc_session"}}"
