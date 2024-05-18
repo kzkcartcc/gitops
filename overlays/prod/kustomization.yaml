@@ -18,7 +18,7 @@ images:
   newTag: zdv-v1.9.1711235667.62-8b6ec15
 - name: adhp/zkc-frontend
   newName: adhp/frontend
-  newTag: zkc-v1.9.1715548600.69-98de7ea
+  newTag: zkc-v1.9.1716061377.71-51180db
 - name: denartcc/api
   newName: adhp/api
   newTag: main-b2362c9
