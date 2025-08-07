@@ -94,6 +94,7 @@ items:
           - DEC
           - MZU
           - PIA
+          - BBG
           - KC
       session:
         cookie:
