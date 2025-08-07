@@ -92,6 +92,8 @@ items:
           - MDH
           - MWA
           - DEC
+          - MZU
+          - PIA
           - KC
       session:
         cookie:
